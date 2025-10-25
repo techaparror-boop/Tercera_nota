@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> INPUTS</h1>
+    <ol>
+
+        <p>Texto con un maximo de 15 caracteres</p>
+        <input type="text" name="username" maxlength="15" placeholder="Enter username"></body>
+
+        <p>Seleccionar genero</p>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+
+        <p>Checkbox</p>
+        <input type="checkbox" name="interest" value="coding" id="coding">
+        <label for="coding">Coding</label>
+
+        <p>Menu desplegable: </p>
+        <select name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        </select>
+
+        <p>Boton enviar: </p>
+        <input type="submit" value="Submit Form">
+        <button type="submit">Boton de enviar</button>
+
+        <p>Boton resetear: </p>
+        <form action="/submit-form" method="post">
+        <input type="email" name="email" required />
+        <input type="number" name="age" min="18" max="100" />
+        <button type="submit">Submit Form</button>
+        <input type="reset" value="Reset Form">
+        </form>
+
+        <p>Subir documento:</p>
+        <input type="file" name=" Document">
+
+        <p>Fecha:</p>
+        <input type="date" name="Birthday">
+        
+    </ol>
+  
+</body>
+</html>
