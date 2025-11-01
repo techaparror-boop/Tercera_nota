@@ -1,16 +1,16 @@
-// Capturamos los elementos del DOM
+
 const tipoUsuario = document.getElementById('tipoUsuario');
 const camposDinamicos = document.getElementById('camposDinamicos');
 const formulario = document.getElementById('registroForm');
 
-// Detectar cuando el usuario selecciona un tipo de usuario
+
 tipoUsuario.addEventListener('change', function() {
     const tipo = this.value;
     
-    // Limpiar campos anteriores
+ 
     camposDinamicos.innerHTML = '';
     
-    // Mostrar campos según el tipo seleccionado
+
     if (tipo === 'estudiante') {
         mostrarCamposEstudiante();
     } else if (tipo === 'profesor') {
@@ -120,13 +120,12 @@ function mostrarCamposAdministrador() {
     `;
 }
 
-// Función para validar email
 function validarEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
 
-// Función para validar campos vacíos
+
 function validarCamposVacios() {
     const inputs = camposDinamicos.querySelectorAll('input[required], select[required]');
     let valido = true;
@@ -143,24 +142,21 @@ function validarCamposVacios() {
     return valido;
 }
 
-// Manejar el envío del formulario
+
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Validar tipo de usuario
     if (tipoUsuario.value === '') {
         alert('Por favor, seleccione un tipo de usuario');
         tipoUsuario.focus();
         return;
     }
     
-    // Validar campos vacíos
     if (!validarCamposVacios()) {
         alert('Por favor, complete todos los campos requeridos');
         return;
     }
     
-    // Validar email si existe
     const emailInput = document.getElementById('email');
     if (emailInput && !validarEmail(emailInput.value)) {
         alert('Por favor, ingrese un email válido');
@@ -169,7 +165,6 @@ formulario.addEventListener('submit', function(e) {
         return;
     }
     
-    // Recopilar datos
     const formData = new FormData(formulario);
     const datos = {};
     formData.forEach((value, key) => {
@@ -179,7 +174,6 @@ formulario.addEventListener('submit', function(e) {
     console.log('Datos del formulario:', datos);
     alert('¡Registro exitoso!\n\nTipo: ' + datos.tipoUsuario + '\nNombre: ' + datos.nombre);
     
-    // Limpiar formulario
     formulario.reset();
     camposDinamicos.innerHTML = '';
 });
