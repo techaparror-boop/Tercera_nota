@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio de microdatos</title>
+    </head>
+
+    <body>
+
+        <article itemscope itemtype="http://schema.org/Receta">
+            <header>
+                <h1 itemprop="name">Microdatos arroz con pollo</h1>
+                <p>
+                <time itemprop="datePublished" datetime="2025-10-30">
+                    Fecha: 31 de octubre del 2025
+                </time>
+                </p>
+                <p>Por: Santiago Duarte y Thomas Chaparro</p>
+            </header>
+
+            <a
+                href="https://www.elespectador.com/resizer/v2/LDRLW34JWNAPHDQ6I7KOOUJVKI.jpg?auth=7f5b172004d9ce0d91c9f808169e1cd74c3fdb1f824c363df5b3b9b472645163&width=920&height=613&smart=true&quality=60"
+            >
+            <img
+                src="https://www.elespectador.com/resizer/v2/LDRLW34JWNAPHDQ6I7KOOUJVKI.jpg?auth=7f5b172004d9ce0d91c9f808169e1cd74c3fdb1f824c363df5b3b9b472645163&width=920&height=613&smart=true&quality=60"
+                alt="ArrozConPollo"
+                width="300"
+                height="200"
+            />
+            </a>
+
+            <p itemprop="description">
+                El arroz con pollo es un plato tradicional en muchos países de América Latina,
+                apreciado por su sabor delicioso y su característico tono dorado.
+                Su preparación consiste en cocinar trozos de pollo junto con arroz, cebolla,
+                ajo, pimientos, arvejas y zanahorias, condimentados con especias como el comino y el achiote.
+                Gracias a su aroma, textura y versatilidad, es una opción muy popular en almuerzos familiares 
+                y celebraciones, además de ser un alimento nutritivo y fácil de adaptar a los gustos de cada región.
+            </p>
+
+            <div>
+                <p>
+                <strong>Tiempo de preparación:</strong>
+                <meta itemprop="prepTime" content="PT20M" />20 minutos
+                </p>
+                <p>
+                <strong>Tiempo de cocción:</strong>
+                <meta itemprop="cookTime" content="PT40M" />40 minutos
+                </p>
+            </div>
+
+            <section>
+                <h2>Ingredientes:</h2>
+                <ul>  
+                    <li itemprop="recipeIngredient">2 tazas de arroz</li>
+                    <li itemprop="recipeIngredient">1 cebolla picada</li>
+                    <li itemprop="recipeIngredient">1 pimiento rojo picado</li>
+                    <li itemprop="recipeIngredient">Comino, azafrán y sal al gusto</li>
+                    <li itemprop="recipeIngredient">1 taza de arvejas</li>
+                    <li itemprop="recipeIngredient">1 zanahoria en cubos</li>
+                    <li itemprop="recipeIngredient">3 dientes de ajo</li>
+                    <li itemprop="recipeIngredient">1 kg de pollo troceado</li>
+                    <li itemprop="recipeIngredient">Cilantro fresco</li>
+                    <li itemprop="recipeIngredient">4 tazas de caldo de pollo</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Instrucciones:</h2>
+                <div itemprop="recipeInstructions">
+                    <ol>
+                        <li>Sofríe el pollo con ajo, cebolla y especias hasta dorar.</li>
+                        <li>Agrega los vegetales y cocina por 5 minutos.</li>
+                        <li>Añade el arroz y mezcla bien con el sofrito.</li>
+                        <li>Incorpora el caldo caliente y el azafrán.</li>
+                        <li>Cocina a fuego medio-bajo tapado por 25-30 minutos.</li>
+                        <li>Decora con cilantro fresco y sirve caliente.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <footer>
+                <p>
+                    Categoría:
+                    <span itemprop="recipeCategory">comida</span>
+                </p>
+                <p
+                    itemprop="publisher"
+                    itemscope
+                    itemtype="http://schema.org/Organization"
+                    >
+                    Publicado por:
+                    <span itemprop="name">
+                        Estudiantes del programa de ingenieria de sistemas de la UFPSO
+                    </span>
+                </p>
+            </footer>
+
+        </article>
+    </body>
+</html>

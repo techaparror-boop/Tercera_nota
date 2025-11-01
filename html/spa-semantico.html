@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA con HTML Semántico</title>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#inicio" onclick="cargarInicio()">Inicio</a></li>
+                <li><a href="#acerca" onclick="cargarAcerca()">Acerca de</a></li>
+                <li><a href="#contacto" onclick="cargarContacto()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" id="contenidoPrincipal">
+        <!-- El contenido dinámico se cargará aquí -->
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2025 SPA Semántico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../Js/app.js"></script>
+</body>
+</html>
