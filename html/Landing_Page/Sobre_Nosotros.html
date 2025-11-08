@@ -1,20 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nosotros.</title>
+    <title>Sobre Nosotros - Thomas & Santiago</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sobre-nosotros.css">
 </head>
 <body>
-    <section id="#sobre_nosotros">
-        <h2>Sobre nosotros.</h2>
-        <p>Hola, somos Thomas y Santiago, apasionados por la programación y el aprendizaje de nuevas tecnologías.</p>
-    </section>
-    <nav>
+    <header>
+        <h1>👥 Sobre Nosotros</h1>
+        <nav>
             <ul>
-                <li><a href="Landing_Page.html">Nuestro perfil.</a></li>
-                <li><a href="Nuestras_habilidades.html">Nuestras habilidades.</a></li>
+                <li><a href="Landing_page.html">Página principal</a></li>
+                <li><a href="nuestras_habilidades.html">Nuestras habilidades</a></li>
             </ul>
         </nav>
+    </header>
+
+    <main class="about-container">
+        <!-- Sección de introducción -->
+        <section class="intro-section">
+            <h2>¿Quiénes Somos?</h2>
+            <p class="intro-text">
+                Hola, somos <strong>Thomas Chaparro</strong> y <strong>Santiago Duarte</strong>, 
+                estudiantes apasionados por la programación y el aprendizaje constante de nuevas tecnologías.
+            </p>
+        </section>
+
+        <!-- Sección de perfiles -->
+        <section class="profiles-section">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <div class="avatar">👨‍💻</div>
+                </div>
+                <h3>Thomas Chaparro</h3>
+                <p class="profile-role">Desarrollador Frontend</p>
+                <p class="profile-description">
+                    Enfocado en crear interfaces web atractivas y funcionales. 
+                    Me apasiona el diseño responsivo y la experiencia de usuario.
+                </p>
+                <div class="profile-interests">
+                    <h4>Intereses:</h4>
+                    <ul>
+                        <li>Diseño UI/UX</li>
+                        <li>CSS Avanzado</li>
+                        <li>Animaciones Web</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image">
+                    <div class="avatar">👨‍💻</div>
+                </div>
+                <h3>Santiago Duarte</h3>
+                <p class="profile-role">Desarrollador Frontend</p>
+                <p class="profile-description">
+                    Apasionado por la lógica de programación y la resolución de problemas. 
+                    Me encanta optimizar código y aprender nuevas tecnologías.
+                </p>
+                <div class="profile-interests">
+                    <h4>Intereses:</h4>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Algoritmos</li>
+                        <li>Desarrollo Backend</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra historia -->
+        <section class="story-section">
+            <h2>Nuestra Historia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">📚</div>
+                    <div class="timeline-content">
+                        <h4>El Comienzo</h4>
+                        <p>Iniciamos nuestro camino en el mundo del desarrollo web en la universidad, 
+                        motivados por crear soluciones tecnológicas innovadoras.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">💻</div>
+                    <div class="timeline-content">
+                        <h4>Primeros Proyectos</h4>
+                        <p>Comenzamos con HTML y CSS, creando nuestras primeras páginas web 
+                        y descubriendo nuestra pasión por el desarrollo frontend.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">🚀</div>
+                    <div class="timeline-content">
+                        <h4>Crecimiento Continuo</h4>
+                        <p>Actualmente estamos expandiendo nuestras habilidades con JavaScript 
+                        y explorando frameworks modernos como React.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra misión y valores -->
+        <section class="values-section">
+            <h2>Nuestros Valores</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h4>Compromiso</h4>
+                    <p>Dedicados al aprendizaje continuo y la mejora constante de nuestras habilidades.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h4>Trabajo en Equipo</h4>
+                    <p>Creemos en la colaboración y el apoyo mutuo para lograr mejores resultados.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h4>Innovación</h4>
+                    <p>Buscamos siempre nuevas formas de resolver problemas y crear soluciones únicas.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">📖</div>
+                    <h4>Aprendizaje</h4>
+                    <p>La curiosidad y las ganas de aprender son el motor de nuestro desarrollo profesional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section class="cta-section">
+            <h2>¿Quieres Trabajar con Nosotros?</h2>
+            <p>Estamos abiertos a nuevos proyectos y oportunidades de aprendizaje.</p>
+            <a href="index.html#contacto" class="cta-btn">Contáctanos</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-container">
+            <p>&copy; 2025 Thomas Chaparro y Santiago Duarte. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

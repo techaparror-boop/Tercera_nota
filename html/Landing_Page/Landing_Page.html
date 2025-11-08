@@ -3,38 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro perfil.</title>
+    <title>Thomas Chaparro & Santiago Duarte - Desarrolladores Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <header>
-        <h1>Thomas Chaparro y Santiago Duarte.</h1>
-        <p>Desarrolladores principantes que buscan un 5.0 en la materia de desarrollo de aplicaciones web.</p>
+        <h1>👨‍💻 Thomas Chaparro y Santiago Duarte</h1>
+        <p>Desarrolladores principiantes que buscan un 5.0 en la materia de desarrollo de aplicaciones web.</p>
         <nav>
             <ul>
-                <li><a href="Sobre_Nosotros.html">Sobre nosotros.</a></li>
-                <li><a href="Nuestras_habilidades.html">Nuestras habilidades.</a></li>
-                <li><a href="#contacto">Contacto.</a></li>
+                <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="nuestras_habilidades.html">Nuestras habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    
-    <footer id="#contacto">
-        <H2>Contactanos</H2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
 
-            <label for="email">Correo:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <div class="hero-content">
+            <h2>Construyendo el Futuro Digital</h2>
+            <p>Aprendiendo, desarrollando y creciendo cada día</p>
+            <a href="#contacto" class="cta-button">¡Contáctanos!</a>
+        </div>
+    </section>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+    <!-- Sección de Características -->
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Desarrollo Web</h3>
+            <p>Creamos sitios web modernos utilizando HTML, CSS y JavaScript con las mejores prácticas.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Diseño Responsivo</h3>
+            <p>Nuestros proyectos se adaptan perfectamente a cualquier dispositivo: móvil, tablet o escritorio.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Aprendizaje Continuo</h3>
+            <p>Siempre actualizándonos con las últimas tecnologías y tendencias del desarrollo web.</p>
+        </div>
+    </section>
 
-            <input type="submit" value="Enviar">
-        </form>
-    <p>&copy; 2025 Thomas Chaparro y Santiago Duarte.</p>
+    <!-- Footer con Formulario de Contacto -->
+    <footer id="contacto">
+        <div class="contact-container">
+            <h2>📧 Contáctanos</h2>
+            <p style="margin-bottom: 2rem;">¿Tienes alguna pregunta o proyecto en mente? ¡Escríbenos!</p>
+            
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
 
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto o pregunta..." required></textarea>
+
+                <input type="submit" value="Enviar Mensaje">
+            </form>
+            
+            <p class="copyright">&copy; 2025 Thomas Chaparro y Santiago Duarte. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
 </body>
 </html>

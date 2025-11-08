@@ -1,0 +1,202 @@
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.intro-section h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Grid de habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Barra de progreso simple */
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #667eea;
+    border-radius: 10px;
+}
+
+.html-progress {
+    width: 75%;
+}
+
+.css-progress {
+    width: 70%;
+}
+
+.js-progress {
+    width: 65%;
+}
+
+.skill-level {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.skill-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.skill-details {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.skill-details li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+.skill-details li::before {
+    content: "✓ ";
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Otras habilidades */
+.other-skills {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.other-skills h2 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 2rem;
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tool-badge {
+    background: #667eea;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Sección de aprendizaje */
+.learning-section {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.learning-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.learning-section > p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.learning-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.learning-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.learning-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.learning-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 2rem 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-items {
+        grid-template-columns: 1fr;
+    }
+}

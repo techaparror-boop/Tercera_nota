@@ -1,25 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestras habilidades.</title>
+    <title>Nuestras Habilidades - Thomas & Santiago</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="habilidades.css">
 </head>
+
 <body>
-    <section id="#nuestras_habilidades">
-        <h2>Nuestras habilidades.</h2>
-        <p>Las habilidades que estamos formando activamente se centran en los siguientes lenguajes:</p>
-        <ul>
-            <li>HTML.</li>
-            <li>CSS.</li>
-            <LI>JS.</LI>
-        </ul>
-    </section>
-    <nav>
+    <header>
+        <h1>💡 Nuestras Habilidades</h1>
+        <nav>
             <ul>
-                <li><a href="Sobre_Nosotros.html">Sobre nosotros.</a></li>
-                <li><a href="Landing_Page.html">Nuestro perfil.</a></li>
+                <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="Landing_page.html">Página principal</a></li>
             </ul>
         </nav>
+    </header>
+
+    <main class="skills-container">
+        <section class="intro-section">
+            <h2>Tecnologías que Dominamos</h2>
+            <p>Las habilidades que estamos formando activamente se centran en los siguientes lenguajes y tecnologías:</p>
+        </section>
+
+        <section class="skills-grid">
+            <!-- HTML Card -->
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML5</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress html-progress"></div>
+                </div>
+                <p class="skill-level">75%</p>
+                <p class="skill-description">
+                    Estructura semántica, formularios avanzados, elementos multimedia y accesibilidad web.
+                </p>
+                <ul class="skill-details">
+                    <li>Etiquetas semánticas</li>
+                    <li>Formularios y validación</li>
+                    <li>HTML5 APIs</li>
+                </ul>
+            </div>
+
+            <!-- CSS Card -->
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS3</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress css-progress"></div>
+                </div>
+                <p class="skill-level">70%</p>
+                <p class="skill-description">
+                    Diseño responsivo, animaciones, flexbox, grid, y frameworks modernos de CSS.
+                </p>
+                <ul class="skill-details">
+                    <li>Diseño responsive</li>
+                    <li>Animaciones y transiciones</li>
+                    <li>Flexbox y Grid</li>
+                </ul>
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress js-progress"></div>
+                </div>
+                <p class="skill-level">65%</p>
+                <p class="skill-description">
+                    Programación orientada a objetos, manipulación del DOM, eventos y programación asíncrona.
+                </p>
+                <ul class="skill-details">
+                    <li>Manipulación del DOM</li>
+                    <li>Eventos y callbacks</li>
+                    <li>ES6+ features</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de otras habilidades -->
+        <section class="other-skills">
+            <h2>Otras Herramientas y Tecnologías</h2>
+            <div class="tools-grid">
+                <div class="tool-badge">Git & GitHub</div>
+                <div class="tool-badge">VS Code</div>
+                <div class="tool-badge">Responsive Design</div>
+                <div class="tool-badge">APIs REST</div>
+                <div class="tool-badge">Control de Versiones</div>
+                <div class="tool-badge">Depuración</div>
+            </div>
+        </section>
+
+        <!-- Sección de aprendizaje continuo -->
+        <section class="learning-section">
+            <h2>🚀 En Constante Aprendizaje</h2>
+            <p>Actualmente estamos expandiendo nuestras habilidades hacia:</p>
+            <div class="learning-items">
+                <div class="learning-card">
+                    <span class="learning-icon">📚</span>
+                    <h4>React.js</h4>
+                    <p>Biblioteca de JavaScript para interfaces de usuario</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-icon">🗄️</span>
+                    <h4>Node.js</h4>
+                    <p>Entorno de ejecución para JavaScript del lado del servidor</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-icon">🎯</span>
+                    <h4>TypeScript</h4>
+                    <p>Superset de JavaScript con tipado estático</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-container">
+            <p>&copy; 2025 Thomas Chaparro y Santiago Duarte. Todos los derechos reservados.</p>
+            <a href="index.html#contacto" class="footer-link">¿Tienes un proyecto? Contáctanos</a>
+        </div>
+    </footer>
+
 </body>
 </html>
